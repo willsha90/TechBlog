@@ -4,12 +4,19 @@
 <div class="page-content">
   <main>
     <h2></h2>
-    <ol>
+    <ul>
+      <a href="/posts/addnew">Add new Post</a>
+      {{#each posts}}
       <li>
-        <h3>{{post.title}}</h3>
-        <p class="byline">{{post.creator_id}}</p>
+        <a href="\post\\{{this.id}}\update">update</a>
+        <a href="\post\\{{this.id}}\delete">delete</a>
+        <h3>{{this.title}}</h3>
+        <p class="byline">{{this.content}}</p>
+        <p class="byline">{{this.creator.username}}</p>
       </li>
-    </ol>
+      {{/each}}
+      <a href="/posts/addnew">Add new Post</a>
+    </ul>
   </main>
   {{! <aside>
     <section>

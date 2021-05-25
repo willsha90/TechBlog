@@ -1,12 +1,13 @@
 <div class="col col-12 py-3">
     <h2>Login</h2>
-    <form>
+    <form method="POST" action="/login">
       <div class="mb-3">
         <label for="input-email" class="form-label">Email address</label>
         <input
           type="email"
           class="form-control"
           id="input-email"
+          name="username"
           aria-describedby="emailHelp"
         />
         <div id="emailHelp" class="form-text">We'll never share your email with
@@ -14,7 +15,7 @@
       </div>
       <div class="mb-3">
         <label for="input-password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="input-password" />
+        <input type="password" name="password" class="form-control" id="input-password" />
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />

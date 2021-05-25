@@ -27,43 +27,41 @@ const postData = [
     title: 'My Third Blog post (user 1)',
     content: 'Officiis, corrupti vitae dignissimos aut obcaecati magnam possimus repellat assumenda ipsum. Et quis aspernatur deserunt culpa! ',
     creator_id: 1,
-    creation_date: 05/24/2021, 
   },
   {
     title: 'My Fourth Blog post (user 1)',
     content: 'He found the chocolate covered roaches quite tasty...',
     creator_id: 1,
-    creation_date: 05/23/2021, 
   },
   {
     title: 'My Fifth Blog post (user 1)',
     content: 'Thigh-high in the water, the fisherman’s hope for dinner soon turned to despair...',
-    creator_id: 05/10/2021,
+    creator_id: 1,
   },
   {
     title: 'My Sixth Blog post (user 1)',
     content: 'The clock within this blog and the clock on my laptop are 1 hour different from each other...',
-    creator_id: 04/23/2021,
+    creator_id: 1,
   },
   {
     title: 'My 7th Blog post (user 1)',
     content: 'The green tea and avocado smoothie turned out exactly as would be expected...',
-    creator_id: 04/15/2021,
+    creator_id: 1,
   },
   {
     title: 'My Eighth Blog post (user 1)',
     content: 'Buried deep in the snow, he hoped his batteries were fresh in his avalanche beacon...',
-    creator_id: 05/15/2021,
+    creator_id: 1,
   },
   {
     title: 'My Nineth Blog post (user 1)',
     content: 'The opportunity of a lifetime passed before him as he tried to decide between a cone or a cup...',
-    creator_id: 05/02/2021,
+    creator_id: 1,
   },
   {
     title: 'My Tenth Blog post (user 1)',
     content: 'He ran out of money, so he had to stop playing poker...',
-    creator_id: 05/09/2021,
+    creator_id: 1,
   },
 ];
 

@@ -10,6 +10,8 @@ const SESSION_SECRET = 'uewhg#*&*&(G!iewsfiuewhgfjksdh';
 // create an ExpressJS instance
 const app = express();
 
+app.use(express.urlencoded({extended: true}));
+
 // set handlebars as the view engine
 app.engine('handlebars', expressHandlebars());
 app.set('views', path.join(__dirname, 'src/views'));

@@ -1,16 +1,25 @@
 const visitCounter = require('../Utils/visit-counter');
-const {User, Post} = require('../Models');
+const PostService = require('../Services/post-service');
 
 module.exports = {
-  showHomePage: (req, res, next) => {
-    visitCounter(req);
-    const isFirstVisit = req.session.visitCount == 1;
-    if(isFirstVisit) {
-      console.log('HomeController.showHomePage: first visit');
+  showHomePage: async (req, res) => {
+    try {
+      const {user} = req.session;
 
-    } else {
-      console.log('HomeController.showHomePage: visit count = ', req.session.visitCount);
+      const post = await PostService.findAll(user);
+
+      const model = {
+        posts: posts 
+      };
+
+      if(user) {
+        model.user = user;
+      }
+
+      res.render('index', model)
+    } catch (err) {
+      console.error(err);
+      res.status(500).send("internal server error");
     }
-    res.render('index');
   }
 };
