@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style-type: none;   
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.page-wrapper {
+    padding: 0 20px;
+    min-height: 100vh;
+}
+
+.site-header {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Inconsolata', monospace;
+}
+
+img.site-author {
+    width: 15vw;
+    display: none;
+}
+
+.instructions {
+    margin-bottom: 15px;
+}
+
+.page-content {
+    /* border: 1px solid red */
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+aside section {
+    margin-bottom: 8px;
+}
+
+.site-footer {
+    margin-top: auto;
+}
