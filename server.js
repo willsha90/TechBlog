@@ -4,7 +4,7 @@ const path = require('path');
 const session = require('express-session');
 
 // constants
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 const SESSION_SECRET = 'uewhg#*&*&(G!iewsfiuewhgfjksdh';
 
 // create an ExpressJS instance
